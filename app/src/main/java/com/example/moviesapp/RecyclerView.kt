@@ -23,7 +23,7 @@ class RecyclerView : AppCompatActivity() {
         binding.toolbar.setTitle("MoviesApp")
         setSupportActionBar(binding.toolbar)
 
-        MoviesAdapter.updateList(getMoreItems())
+        moviesAdapter.updateList(getMoreItems())
         binding.rvMovies.adapter = moviesAdapter
         binding.rvMovies.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
 
@@ -45,23 +45,31 @@ class RecyclerView : AppCompatActivity() {
                 "After crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self on a mission to save the future."
 
             ),
-            MoviesAdapter.MoviesDataClass
+            MoviesAdapter.MoviesDataClass("Sound of Metal", R.drawable.SOM, "2019", "7.8",
+                "A drummer's life is thrown into freefall when he begins to lose his hearing and has to adapt to a new world of silence."
+            ),
+            MoviesAdapter.MoviesDataClass("Inglourious Basterds", R.drawable.IB, "2009", "8.3",
+                "In Nazi-occupied France during World War II, a group of Jewish-American soldiers known as 'The Basterds' plan to assassinate Nazi leaders, while a young Jewish cinema proprietor seeks to avenge her family's death."
+                ),
+            MoviesAdapter.MoviesDataClass("To Kill A Mocking Bird", R.drawable.AMB,"1962", "8.3",
+                "Atticus Finch, a lawyer in the Depression-era South, defends a Black man against an undeserved rape charge, and his kids against prejudice."
 
-
-
-
-
+            ),
+            MoviesAdapter.MoviesDataClass("Scent of a Woman", R.drawable.SOW, "1992", "8.0",
+                    "The film follows a prep school student, Charlie, who takes on a temporary job to assist a blind and irritable retired Lieutenant Colonel, Frank Slade, over the Thanksgiving weekend. The journey leads to profound life lessons for both characters as they navigate challenges, form an unlikely bond, and discover the true meaning of integrity and courage."),
+            MoviesAdapter.MoviesDataClass("Coco", R.drawable.coco, "2017", "8.4",
+                "Despite his family's baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history."
+            ),
+            MoviesAdapter.MoviesDataClass("Soul", R.drawable.soul, "2020", "8.0",
+                "Soul follows Joe Gardner, a middle school music teacher who dreams of becoming a jazz musician. After a life-changing event, Joe finds himself in the afterlife, where he must guide another soul, 22, who has no interest in living on Earth. Together, they explore the meaning of life, purpose, and passion. As they journey through various realms, Joe discovers that life is about more than fulfilling a dream; it’s about experiencing the joy in the little moments."
+                ),
+            MoviesAdapter.MoviesDataClass("The Shawshank Redemption", R.drawable.SR, "1994","9.3",
+                "The film tells the story of Andy Dufresne, a banker sentenced to life imprisonment at Shawshank State Penitentiary for the murders of his wife and her lover, despite claiming his innocence. Over the years, Andy befriends fellow inmate Ellis \"Red\" Redding and becomes an instrumental figure in the prison's money-laundering operation, all while enduring hardships and fostering a sense of hope."
+            )
             )
 
 
     }
-
-
-
-
-
-
-
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_toolbar_menu, menu)
