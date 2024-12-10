@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".RecyclerView">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -20,9 +21,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:title="MoviesApp"
         app:titleTextColor="@color/white" />
-
 
     <TextView
         android:id="@+id/welcome"
@@ -53,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214"
+        app:layout_constraintVertical_bias="0.14"
         tools:listitem="@layout/movie_item" />
 
 
