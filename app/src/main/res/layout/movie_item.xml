@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
-
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
 
     <androidx.cardview.widget.CardView
@@ -13,77 +12,85 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="4dp"
-        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="-52dp"
+            tools:layout_editor_absoluteY="272dp">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="91dp"
-                android:layout_height="110dp"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="37dp"
-                android:layout_marginEnd="185dp"
-                android:layout_marginBottom="63dp"
+                android:id="@+id/cardView"
+                android:layout_width="72dp"
+                android:layout_height="97dp"
                 android:visibility="visible"
                 app:cardCornerRadius="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintHorizontal_bias="0.088"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.24">
+                app:layout_constraintVertical_bias="0.509">
 
                 <ImageView
                     android:id="@+id/movieImage"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/image"
-                    android:visibility="visible">
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="-137dp"
+                    tools:layout_editor_absoluteY="4dp">
 
                 </ImageView>
+
+
             </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="172dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="188dp"
-                android:layout_marginBottom="103dp"
                 android:text="@string/title"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.205">
 
             </TextView>
 
             <TextView
-                android:id="@+id/tv_rating"
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_description"
+                android:layout_width="115dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="310dp"
-                android:layout_marginTop="19dp"
-                android:layout_marginEnd="63dp"
-                android:layout_marginBottom="111dp"
-                android:text="@string/rating"
-                android:textSize="15sp"
-                android:textStyle="bold|italic"
+
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="4"
+                android:text="@string/description"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="italic"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.557"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -93,41 +100,42 @@
                 android:id="@+id/tv_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="223dp"
-                android:layout_marginTop="114dp"
-                android:layout_marginEnd="101dp"
-                android:layout_marginBottom="16dp"
                 android:text="@string/release_date"
+                android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.679"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.876">
 
             </TextView>
 
             <TextView
-                android:id="@+id/tv_description"
+                android:id="@+id/tv_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="144dp"
-                android:layout_marginTop="68dp"
-                android:layout_marginEnd="219dp"
-                android:layout_marginBottom="68dp"
-                android:text="@string/description"
-                android:textSize="10sp"
-                android:textStyle="italic"
-                android:visibility="gone"
+                android:text="@string/rating"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.871"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.205">
 
             </TextView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

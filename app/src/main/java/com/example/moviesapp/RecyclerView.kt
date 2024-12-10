@@ -63,7 +63,7 @@ class RecyclerView : AppCompatActivity() {
             MoviesAdapter.MoviesDataClass("Soul", R.drawable.soul, "2020", "8.0",
                 "Soul follows Joe Gardner, a middle school music teacher who dreams of becoming a jazz musician. After a life-changing event, Joe finds himself in the afterlife, where he must guide another soul, 22, who has no interest in living on Earth. Together, they explore the meaning of life, purpose, and passion. As they journey through various realms, Joe discovers that life is about more than fulfilling a dream; it’s about experiencing the joy in the little moments."
                 ),
-            MoviesAdapter.MoviesDataClass("The Shawshank Redemption", R.drawable.sr, "1994","9.3",
+            MoviesAdapter.MoviesDataClass("Shawshank Redemption", R.drawable.sr, "1994","9.3",
                 "The film tells the story of Andy Dufresne, a banker sentenced to life imprisonment at Shawshank State Penitentiary for the murders of his wife and her lover, despite claiming his innocence. Over the years, Andy befriends fellow inmate Ellis \"Red\" Redding and becomes an instrumental figure in the prison's money-laundering operation, all while enduring hardships and fostering a sense of hope."
             )
             )
