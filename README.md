@@ -1,4 +1,4 @@
-# FilmVault 🎬✨  
+# Film Vault 🎬✨  
 An Android application that provides users with movie details, featuring a login screen that welcomes the user by name and a dynamic movie list displayed using **RecyclerView**.  
 
 ## Features  
